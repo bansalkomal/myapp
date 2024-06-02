@@ -42,8 +42,25 @@ select * from emp;
 
 kubectl exec -it <pod-name for myapp> -- /bin/sh
 
-apt-get update && apt-get install -y curl
+apt-get update
 
-curl http://<Node-IP>:<NodePort>
+apt-get install -y curl
 
-curl http://192.168.65.3:32000/emp  - to fetch emp records   (IP address and NodePort)
+Check Node-IP :- kubectl get nodes -o wide
+
+Check NodePort :- kubectl get svc
+
+curl http://<Node-IP Address>:<Node Port>
+
+curl http://192.168.65.3:32000/emp  - to fetch emp records
+
+
+Github link :- https://github.com/bansalkomal/myapp
+
+Docker Image Link :-  https://hub.docker.com/repository/docker/kbansal01/myapp/general
+
+Service link :- http://192.168.65.3:32000/emp
+
+Link of recording :- https://drive.google.com/file/d/1LIZ31pECSpQC3FkqkPKOBebl9LOeGjMJ/view?usp=drive_link
+
+

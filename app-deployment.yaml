@@ -10,6 +10,9 @@ spec:
   replicas: 3
   strategy:
     type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 1
   template:
     metadata:
       labels:
@@ -17,7 +20,7 @@ spec:
     spec:
       containers:
         - name: myapp
-          image: myapp:1.0
+          image: kbansal01/myapp:1.0
           resources:
             requests:
               memory: "128Mi"
