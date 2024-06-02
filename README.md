@@ -44,4 +44,4 @@ kubectl exec -it <pod-name for myapp> -- /bin/sh
 
 apt-get update && apt-get install -y curl
 curl http://<Node-IP>:<NodePort>
-# curl http://192.168.65.3:32000/emp  - to fetch emp records   (IP address and NodePort)
+curl http://192.168.65.3:32000/emp  - to fetch emp records   (IP address and NodePort)
