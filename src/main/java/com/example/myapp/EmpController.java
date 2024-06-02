@@ -8,13 +8,6 @@ import java.util.List;
 @RestController
 @RequestMapping("/emp")
 public class EmpController {
-//    @Autowired
-//    private EmpRepository empRepository;
-//
-//    @GetMapping
-//    public List<Emp> getAllEmps() {
-//        return empRepository.findAll();
-//    }
 
     @Autowired
     private EmpService empService;
